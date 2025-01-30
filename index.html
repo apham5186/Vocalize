@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Vocalize</title>
+  </head>
+  <body>
+    <div class = 'heading'>
+      <div class = 'logo'>
+        <img src = Assets\wave-sound.png class = 'wave'>
+        <h1 class ='Title'> Vocalize</h1>
+      </div>
+      <h2 class ='Subtitle'> Convert any text to audio for easy listening</h2>
+    </div>
+    <div id="content">
+      
+      <span id="postIDreturned"></span>
+      <textarea id ="postText" placeholder="Type here..."></textarea>
+      <span id="charCounter">Characters: 0</span>
+      <div id ='actionsBar'>
+        <div id="voice">
+          <strong>VOICE:</strong>
+          <select id="voiceSelected">
+            <option value="Joanna">Joanna [English]</option>
+            <option value="Maja">Maja [Polish]</option>
+            <option value="Enrique">Enrique [Spanish]</option>
+            <option value="Marlene">Marlene [German]</option>
+            <option value="Mathieu">Mathieu [French]</option>
+            <option value="Cristiano">Cristiano [Portuquese]</option>
+            <option value="Liv">Liv [Norwegian]</option>
+            <option value="Mizuki">Mizuki [Japanese]</option>
+            <option value="Carla">Carla [Italian]</option>
+            <option value="Carmen">Carmen [Romanian]</option>
+            <option value="Tatyana">Tatyana [Russian]</option>
+            <option value="Astrid">Astrid [Swedish]</option>
+            <option value="Filiz">Filiz [Turkish]</option>
+            <option value="Gwyneth">Gwyneth [Welsh]</option>
+            <option value="Karl">Karl [Icelandic]</option>
+          </select>
+          <input type="submit" value="Say it!" id="sayButton" class="buttons">
+        </div> 
+        <div id = 'search'>
+          <strong>Post ID which you want to retrieve: </strong> 
+          <input type="text" id="postId" placeholder ='Type PostID here'> 
+          <input type="submit" class="buttons" value="Search" id="searchButton">
+        </div>
+      </div>
+    </div>
+      
+    <table id="posts">
+        <colgroup>
+          <col style="width:10%">
+          <col style="width:7%">
+          <col style="width:45%">
+          <col style="width:8%">
+          <col style="width:30%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>Post ID</th>
+            <th>Voice</th>
+            <th>Post</th>
+            <th>Status</th>
+            <th>Player</th>
+          </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
+</html>
