@@ -4,7 +4,8 @@ This project demonstrates AWS proficiency by implementing a serverless text-to-s
 ## Architecture of the project
 ![image](https://github.com/user-attachments/assets/36650cb5-4115-4591-94a4-110cfb23d84b)
 
-
+## Demo
+https://dqjvqzw6e4nst.cloudfront.net/
 ## Lambda Functions 
 The project uses three different lambda functions coded in Python
 
